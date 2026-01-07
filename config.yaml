@@ -1,0 +1,21 @@
+# --- General Parameters ---
+seed: 42
+operation_mode: "train" # Can be "train" or "evaluate"
+
+# --- Data Parameters ---
+data_path: "merged_data/eurusd_daily_news.csv"
+test_split_size: 0.3
+validation_split_size: 0.5 # Percentage of the test split to be used for validation
+
+# --- Model & Tokenizer Parameters ---
+model_name: "huawei-noah/TinyBERT_General_4L_312D"
+num_labels: 2
+max_len: 256
+dropout: 0.2
+
+# --- Training Hyperparameters ---
+optimizer_name: "AdamW" # e.g., AdamW, Adam, SGD
+epochs: 15
+batch_size: 32
+learning_rate: 1.0e-5
+weight_decay: 5.0e-4
