@@ -1,4 +1,4 @@
-# Transformer_Based_Forex_Prediction_from_News_Headlines
+# Transformer-Based Forex Prediction from News Headlines
 
 ## Overview
 This project fine-tunes **four BERT-based models** to predict forex price movements based on financial news. The models classify news headlines as indicators of **upward** or **downward** price movement. The approach leverages **pre-trained transformers** and applies **domain-specific fine-tuning** on forex-related financial text.
@@ -35,6 +35,20 @@ pandas
 matplotlib
 pyyaml
 ```
+## Getting Started
+
+### Installation
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/Krissaan-amen/Transformer_Based_Forex_Prediction_from_News_Headlines.git
+    cd Transformer_Based_Forex_Prediction_from_News_Headlines
+    ```
+
+2.  **Install dependencies:**
+    The necessary dependencies are listed in `requirements.txt`. Install them using pip:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 ## Configuration
 All experiment parameters are controlled via the `config.yaml` file. This allows for easy modification of the training and evaluation process without changing the source code.
