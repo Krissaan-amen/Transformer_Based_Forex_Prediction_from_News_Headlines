@@ -3,12 +3,16 @@
 ## Overview
 This project fine-tunes **four BERT-based models** to predict forex price movements based on financial news. The models classify news headlines as indicators of **upward** or **downward** price movement. The approach leverages **pre-trained transformers** and applies **domain-specific fine-tuning** on forex-related financial text.
 
-## Models Used
-The following **four transformer models** are fine-tuned for movement classification:
-- **TinyBERT** (`huawei-noah/TinyBERT_General_4L_312D`)
-- **ALBERT** (`albert-base-v2`)
-- **DistilBERT** (`distilbert-base-uncased-finetuned-sst-2-english`)
-- **MiniLM** (`microsoft/MiniLM-L12-H384-uncased`)
+## Models Explored
+This project fine-tunes and compares four different transformer architectures. Each model offers a unique trade-off between size, speed, and performance.
+
+| Model Name | Hugging Face Identifier | Description |
+| :--- | :--- | :--- |
+| **TinyBERT** | `huawei-noah/TinyBERT_General_4L_312D` | A small, fast, and distilled version of BERT, optimized for performance on resource-constrained devices. |
+| **ALBERT** | `albert-base-v2` | "A Lite BERT" that achieves significant parameter reduction, leading to lower memory usage and faster training. |
+| **DistilBERT** | `distilbert-base-uncased-finetuned-sst-2-english` | A distilled, lighter version of BERT that retains substantial performance. This specific checkpoint is pre-tuned for sentiment analysis. |
+| **MiniLM** | `microsoft/MiniLM-L12-H384-uncased` | A small pre-trained model that uses deep self-attention distillation to create a compact and efficient transformer. |
+
 
 ## Datasets
 Two datasets are used, both available in the `merged_data/` directory:
